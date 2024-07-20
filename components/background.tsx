@@ -2,11 +2,7 @@ import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import {
-    type Container,
-    type ISourceOptions,
-    MoveDirection,
-    OutMode,
-    rectBounce,
+    type ISourceOptions
 } from "@tsparticles/engine";
 
 function Background() {
@@ -30,6 +26,10 @@ function Background() {
             color: {
                 value: "#282a36",
             },
+        },
+        fullScreen: {
+            enable: true,
+            zIndex: -1,
         },
         fpsLimit: 120,
         interactivity: {
