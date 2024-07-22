@@ -2,6 +2,10 @@ $bg: #282a36;
 $pink: #FF79C6;
 $purple: #BD93F9;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $bg;
 }

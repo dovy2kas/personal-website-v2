@@ -1,15 +1,16 @@
 import '../styles/index.css'
 import '../styles/App.scss'
 
-interface SectionTitleProps {
-    title: string;
+type Props = {
+    title: string
 }
 
-function SectionTitle({ title }: SectionTitleProps) {
+function SectionTitle(props: Props) {
     return (
-        <div>
-            <h1 className="section-title text-6xl font-bold text-white mt-40">{title}</h1>
+        <div className="flex w-full justify-center items-center">
+            <h1 className="section-title text-6xl font-bold text-white mt-40">{props.title}</h1>
         </div>
+        
         
     );
 }
