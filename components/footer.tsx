@@ -5,7 +5,7 @@ function Footer() {
         <a className="mr-9 text-neutral-200" href="https://www.facebook.com/dovy2kaz/" target="_blank" rel="noreferrer">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 hover:text-pink transition"
+                className="h-8 w-8 hover:text-pink hover:-translate-y-3 transition ease-in-out duration-500"
                 fill="currentColor"
                 viewBox="0 0 24 24">
                 <path
@@ -16,7 +16,7 @@ function Footer() {
         <a className="mr-9 text-neutral-200" href="https://www.linkedin.com/in/dovy2kas/" target="_blank" rel="noreferrer">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 hover:text-pink transition"
+                className="h-8 w-8 hover:text-pink hover:-translate-y-3 transition ease-in-out duration-500"
                 fill="currentColor"
                 viewBox="0 0 24 24">
                 <path
@@ -26,7 +26,7 @@ function Footer() {
         <a className="mr-9 text-neutral-200" href="https://github.com/dovy2kas/" target="_blank" rel="noreferrer">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 hover:text-pink transition"
+                className="h-8 w-8 hover:text-pink hover:-translate-y-3 transition ease-in-out duration-500"
                 fill="currentColor"
                 viewBox="0 0 24 24">
                 <path
@@ -35,7 +35,7 @@ function Footer() {
         </a>
         <a className="text-neutral-200" href="mailto:contact@dovydas.tech" target="_blank" rel="noreferrer">
             <svg 
-                className="h-8 w-8 hover:text-pink transition"
+                className="h-8 w-8 hover:text-pink hover:-translate-y-3 transition ease-in-out duration-500"
                 xmlns="http://www.w3.org/2000/svg" 
                 viewBox="0 0 75.294 75.294"
                 fill="currentColor">
