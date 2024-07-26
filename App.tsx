@@ -8,6 +8,7 @@ import Project from './components/project';
 import tThumb from './img/transacto/landing.jpg';
 import gThumb from './img/gambtopia/roulette.jpg';
 import './styles/index.css';
+import About from './components/about';
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         <Title></Title>
       </section>
       <Navbar></Navbar>
-      <section id="about" className="flex text-center w-full h-screen justify-center">
+      <section id="about" className="w-full h-screen">
         <SectionTitle title={"About"}></SectionTitle>
+        <About></About>
       </section>
       <section id="projects" className="w-full h-screen">
         <SectionTitle title="Projects"></SectionTitle>
