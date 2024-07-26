@@ -1,34 +1,30 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import {
     type ISourceOptions
-} from "@tsparticles/engine";
+  } from "@tsparticles/engine";
 
-function Background() {
+const Background = () => {
+  
     const [init, setInit] = useState(false);
     useEffect(() => {
         initParticlesEngine(async (engine) => {
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        //await loadAll(engine);
-        //await loadFull(engine);
         await loadSlim(engine);
-        //await loadBasic(engine);
         }).then(() => {
         setInit(true);
         });
     }, []);
 
-    const options: ISourceOptions = {
+
+    const options: ISourceOptions = useMemo(() => ({
         background: {
             color: {
                 value: "#282a36",
             },
         },
         fullScreen: {
-            enable: true,
+            enable: false,
             zIndex: -1,
         },
         fpsLimit: 120,
@@ -56,7 +52,7 @@ function Background() {
             },
             number: {
                 density: {
-                    enable: true,
+                    enable: false,
                 },
                 value: 5,
             },
@@ -71,11 +67,20 @@ function Background() {
             },
         },
 
-        detectRetina: true,
-        }
-    return (
-        <Particles options={options} />
+        detectRetina: false,
+        }),
+        [],
     );
+    if (init){
+        return (
+            <Particles 
+                options={options}
+            />
+
+        );
+    }
+    return <></>;
+
     }
 
 export default Background;

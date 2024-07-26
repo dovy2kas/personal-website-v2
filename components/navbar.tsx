@@ -1,8 +1,7 @@
-import React from 'react';
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-current-line text-foreground sticky top-0 z-10">
+    <div className="flex w-full bg-current-line text-foreground sticky top-0 z-10">
       <nav className="container mx-auto p-4 flex justify-between">
         <a href="#home" className="px-3 py-2 rounded hover:text-pink transition">
           Home

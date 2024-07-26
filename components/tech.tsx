@@ -14,7 +14,7 @@ function getRandomDelay() {
 function Tech(props: Props) {
     return (
         <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" delay={getRandomDelay()}>
-            <div className="flex flex-col justify-center items-center size-28 rounded-xl border-2 border-pink bg-background bg-opacity-30 p-5 mb-3">
+            <div className="flex flex-col justify-center items-center size-24 rounded-xl border-2 border-pink bg-background bg-opacity-30 p-5 mb-3">
                 <p className="font-bold text-white">{props.title}</p>
                 <img className="h-auto max-w-full" src={props.img}></img>
             </div>

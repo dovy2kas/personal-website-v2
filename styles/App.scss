@@ -20,7 +20,6 @@ canvas {
     filter: blur(150px);
     z-index: -10;
 }
-
 .section-title:before {
   border-bottom: 18px solid $purple;
   width: 10rem;
@@ -30,5 +29,16 @@ canvas {
   top: 4rem;
   content: '';
   display: block;
+  z-index: -1;
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin:0;
   z-index: -1;
 }

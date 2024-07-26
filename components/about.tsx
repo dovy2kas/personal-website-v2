@@ -1,5 +1,4 @@
 import "animate.css/animate.compat.css"
-import ScrollAnimation from 'react-animate-on-scroll';
 import Tech from './tech';
 import HTML from '../img/tech/html.png';
 import JS from '../img/tech/js.png';
@@ -22,7 +21,7 @@ function About() {
             </div>
             
         </div>
-        <div className="mt-20 flex flex-row justify-center">
+        <div className="mt-20 flex flex-row justify-center max-w-1/2">
         
             <div className="lg:ml-20">
                 <Tech img={HTML} title="HTML"></Tech>
