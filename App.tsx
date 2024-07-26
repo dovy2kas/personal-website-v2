@@ -1,4 +1,3 @@
-import {useState, useEffect} from 'react';
 import './styles/App.scss';
 import Background from './components/background';
 import Title from './components/title';
@@ -9,38 +8,9 @@ import tThumb from './img/transacto/landing.jpg';
 import gThumb from './img/gambtopia/roulette.jpg';
 import './styles/index.css';
 import About from './components/about';
+import Footer from './components/footer';
 
 function App() {
- /* const [height, setHeight] = useState<number>(window.innerHeight);
-  const [width, setWidth] = useState<number>(window.innerWidth);
-
-  useEffect(() => {
-    setHeight(window.innerHeight);
-    setWidth(window.innerWidth);
-  }, []);
-  useEffect(() => {
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.type === 'childList') {
-          const background = document.getElementById('tsparticles');
-          if (background) {
-            background.style.height = `100vh`;
-            background.style.width = `${width*1.2}px`;
-            observer.disconnect();
-          }
-        }
-      });
-    });
-
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true,
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []); */
   
   return (
       <div id="home">
@@ -68,6 +38,7 @@ function App() {
         <section id="contact" className="flex text-center w-full justify-center">
           <SectionTitle title="Contact"></SectionTitle>
         </section>
+        <Footer></Footer>
       </div>
   );
 }
