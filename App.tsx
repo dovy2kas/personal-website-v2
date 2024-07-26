@@ -14,23 +14,24 @@ function App() {
   return (
     <div id="home" className="App">
       <Background></Background>
-      <section className="flex text-center w-full h-screen justify-center items-center">
+      <section className="flex text-center w-full h-screen justify-center items-center p-10">
         <Title></Title>
       </section>
       <Navbar></Navbar>
-      <section id="about" className="w-full h-screen">
+      <section id="about" className="w-full">
         <SectionTitle title={"About"}></SectionTitle>
         <About></About>
       </section>
-      <section id="projects" className="w-full h-screen">
+      <section id="projects" className="w-full">
         <SectionTitle title="Projects"></SectionTitle>
-        <Project title="Transacto" desc="A banking website which allows it's users to send and receive, as well as deposit and withdraw funds. This project was made using flask-socketio, nginx, gunicorn and a MySQL database." image={tThumb} alt="Transacto thumbnail" animateIn="fadeInLeft" animateOut="fadeOutRight" url="https://github.com/dovy2kas/transacto"></Project>
-        <Project title="Gambtopia" desc="A gambling website which has two modes: roulette and crash. While building it I learned how to transfer live data, verify the user actions and prove that bets were fair using cryptography. This project was made using flask-socketio, nginx, gunicorn, MySQL and ReCaptcha." image={gThumb} alt="Gambtopia thumbnail" animateIn="fadeInRight" animateOut="fadeOutLeft" url="https://github.com/dovy2kas/gambtopia"></Project>
+          <Project title="Transacto" desc="A banking website which allows it's users to send and receive, as well as deposit and withdraw funds. This project was made using flask-socketio, nginx, gunicorn and a MySQL database." image={tThumb} alt="Transacto thumbnail" animateIn="fadeInLeft" animateOut="fadeOutRight" url="https://github.com/dovy2kas/transacto"></Project>
+          <Project title="Gambtopia" desc="A gambling website which has two modes: roulette and crash. While building it I learned how to transfer live data, verify the user actions and prove that bets were fair using cryptography. This project was made using flask-socketio, nginx, gunicorn, MySQL and ReCaptcha." image={gThumb} alt="Gambtopia thumbnail" animateIn="fadeInRight" animateOut="fadeOutLeft" url="https://github.com/dovy2kas/gambtopia"></Project>
+
       </section>
-      <section id="services" className="flex text-center w-full h-screen justify-center">
+      <section id="services" className="flex text-center w-full justify-center">
         <SectionTitle title="Services"></SectionTitle>
       </section>
-      <section id="contact" className="flex text-center w-full h-screen justify-center">
+      <section id="contact" className="flex text-center w-full justify-center">
         <SectionTitle title="Contact"></SectionTitle>
       </section>
     </div>

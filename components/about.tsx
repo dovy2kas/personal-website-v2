@@ -13,28 +13,28 @@ import NODE from '../img/tech/node.png';
 
 function About() {
 
-    return <div className="flex md:flex-row flex-col  justify-center space-between">
+    return <div className="flex md:flex-row flex-col items-center justify-center space-between p-10">
         {/*<ScrollAnimation animateIn={props.animateIn} animateOut={props.animateOut} offset={500}>*/}
-        <div className="w-2/4 mt-20 flex flex-row">
-            <div className="ml-20 max-w-2xl">
+        <div className="mt-20 flex flex-row justify-center">
+            <div className="max-w-2xl">
                 <p className="text-3xl text-white font-bold">Welcome to my website</p>
                 <p className="text-2xl text-white mb-3">I specialize in building modern websites. My fascination with technology began at a young age, that's why I am always looking to learn new things. As a curious problem solver, I thrive diving into the intricacies of code, hardware and networking, always seeking for new challenges.</p>
             </div>
             
         </div>
-        <div className="w-2/4 mt-20 flex flex-row">
+        <div className="mt-20 flex flex-row justify-center">
         
-            <div className="ml-20 max-w-2xl">
+            <div className="lg:ml-20">
                 <Tech img={HTML} title="HTML"></Tech>
                 <Tech img={CSS} title="CSS"></Tech>
                 <Tech img={JS} title="JavaScript"></Tech>
             </div>
-            <div className="ml-20 max-w-2xl">
+            <div className="ml-5 lg:ml-20">
                 <Tech img={PY} title="Python"></Tech>
                 <Tech img={REACT} title="React"></Tech>
                 <Tech img={TAILWIND} title="Tailwind"></Tech>
             </div>
-            <div className="ml-20 max-w-2xl">
+            <div className="ml-5 lg:ml-20">
                 <Tech img={MYSQL} title="MySQL"></Tech>
                 <Tech img={GIT} title="Git"></Tech>
                 <Tech img={NODE} title="Node"></Tech>
