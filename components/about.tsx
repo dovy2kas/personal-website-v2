@@ -1,4 +1,3 @@
-import "animate.css/animate.compat.css"
 import Tech from './tech';
 import HTML from '../img/tech/html.png';
 import JS from '../img/tech/js.png';
