@@ -10,6 +10,7 @@ import './styles/index.css';
 import About from './components/about';
 import Footer from './components/footer';
 import Service from './components/service';
+import Contact from './components/contact';
 import FRONTEND from './img/tech/frontend.svg';
 import BACKEND from './img/tech/backend.svg';
 import PENTEST from './img/tech/pentest.svg';
@@ -45,8 +46,9 @@ function App() {
           </div>
 
         </section>
-        <section id="contact" className="flex text-center w-full justify-center">
+        <section id="contact" className="w-full">
           <SectionTitle title="Contact"></SectionTitle>
+          <Contact></Contact>
         </section>
         <Footer></Footer>
       </div>

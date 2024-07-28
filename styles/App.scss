@@ -42,3 +42,7 @@ canvas {
   margin:0;
   z-index: -1;
 }
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
