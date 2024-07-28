@@ -15,7 +15,7 @@ type Props = {
 
 function Service(props: Props) {
     return <ScrollAnimation className="flex-1 w-full" animateIn="fadeInUp" animateOut="fadeOutUp" delay={getRandomDelay()}>
-    <div className="flex flex-col justify-center items-center border rounded-2xl p-5 border-pink border-3 mt-10 h-full">
+    <div className="flex flex-col justify-center items-center  rounded-2xl p-5 border-pink border-4 mt-10 h-full">
         <img src={props.icon} className="max-w-48 text-white"></img>
         <h2 className="text-3xl text-white font-bold">{props.title}</h2>
         <p className="text-lg text-white">{props.content}</p>
