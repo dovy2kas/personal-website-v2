@@ -53,7 +53,7 @@ function Footer() {
 
     <div
       className="bg-current-line p-4 text-center text-white border-t-2 border-purple">
-      © 2024 Copyright:
+      © 2025 Copyright:
       <a
         className="text-white hover:text-pink transition"
         href="https://dovydas.tech/"
