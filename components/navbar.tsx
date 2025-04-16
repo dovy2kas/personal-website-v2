@@ -2,7 +2,6 @@ import {
   FaHouse,
   FaBook,
   FaUser,
-  FaHandHoldingDollar,
   FaEnvelope,
 } from "react-icons/fa6";
 
@@ -29,12 +28,6 @@ const Navbar = () => {
             <Icon icon={FaBook} />
           </span>
           <span className="hidden md:flex">Projects</span>
-        </a>
-        <a href="#services" className="px-3 py-2 rounded hover:text-pink transition flex flex-row space-x-2 items-center">
-          <span className="text-2xl md:text-md">
-            <Icon icon={FaHandHoldingDollar} />
-          </span>
-          <span className="hidden md:flex">Services</span>
         </a>
         <a href="#contact" className="px-3 py-2 rounded hover:text-pink transition flex flex-row space-x-2 items-center">
           <span className="text-2xl md:text-md">
